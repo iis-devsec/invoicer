@@ -7,8 +7,8 @@ RUN adduser --gid 10001 --uid 10001 \
 RUN mkdir /app/statics/
 ADD statics /app/statics/
 
-ADD . /go/src/github.com/Securing-DevOps/invoicer
-RUN go install github.com/Securing-DevOps/invoicer
+ADD . /go/src/github.com/iis-devsec/invoicer
+RUN go install github.com/iis-devsec/invoicer
 
 USER app
 EXPOSE 8080
